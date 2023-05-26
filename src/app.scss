@@ -1,0 +1,19 @@
+@mixin mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+
+
+.app{
+    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #FFFFFF;
+
+    .link{
+        text-decoration: none;
+        color: inherit;
+
+    }
+}

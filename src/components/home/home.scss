@@ -1,0 +1,222 @@
+@import "../../app.scss";
+
+
+
+
+.home{
+    display: flex;
+    
+    padding: 20px 170px;
+    
+
+    gap: 50px;
+    flex-direction: column;
+    @include mobile{
+        padding: 60px 30px;
+        gap: 40px;
+    }
+
+    .bread{
+        span{
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        @include mobile{
+            margin-top: -90px;
+        }
+    }
+
+    .referral{
+        display: flex;
+        align-items: self-start;
+        @include mobile{
+            flex-direction:column;
+        }
+        
+        
+        gap: 100px;
+        .balance{
+            
+            display: flex;
+           
+            @include mobile{
+                
+                flex-wrap: wrap;
+            }
+            flex-direction: column;
+            
+            gap: 20px;
+            box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: fit-content;
+            border-radius: 20px;
+            
+            .info{
+                display: flex;
+                
+                
+                gap: 50px;
+                @include mobile{
+                    justify-content: space-between;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                }
+                .details{
+                   
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    span{
+                        color: #800080;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    .price{
+                        color: black;
+                        font-size: 32px;
+                        font-weight: 500;
+                    }
+
+                    button{
+                        display: none;
+                        
+                        @include mobile{
+                            align-items: center;
+                        justify-content: center;
+                            display: flex;
+                            padding: 8px 16px;
+                            border-radius: 20px;
+                            background-color: #800080;
+                            border: none;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+                
+            }
+            .btn{
+                
+                @include mobile{
+                   display: none;
+                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    background-color: #800080;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .code{
+            
+            display: flex;
+            flex-direction: column;
+            h1{
+                @include mobile{
+                    margin-top: -70px;
+                }
+                margin-top: 0px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #800080;
+                
+                }
+                .gradient{
+                    background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+                    padding: 1.5px 1.5px;
+                    border-radius: 10px;
+                    
+                    .container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    padding: 15px 60px;
+                    @include mobile{
+                        padding: 12px 30px;
+                    }
+                    span{
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 1.5em;
+                        color: #800080;
+                    }
+            }
+                }
+                
+        }
+    }
+
+
+    .features{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h1{
+            margin-top: 0px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #800080;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            .feature{
+                
+                padding: 15px;
+                display: flex;
+                
+                gap: 10px;
+                .image{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 65px;
+                    width: 65px;
+                    min-width: 65px;
+                    background-color: rgba(217, 217, 217, 0.25);
+                    border-radius: 50%;
+                }
+                .info{
+                    max-width: 350px;
+                    h3{
+                        margin-top: 0px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .end{
+        margin-bottom: 50px;
+        @include mobile{
+            margin-bottom: 0px;
+        }
+        h1{
+            font-size: 16px;
+            font-weight: 500;
+            color: #800080;
+            cursor: pointer;
+        }
+    }
+    
+}
